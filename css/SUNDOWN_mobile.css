@@ -1,0 +1,124 @@
+@-webkit-keyframes animate-fade-out
+{
+   0% { opacity: 1;  }
+   100% { opacity: 0;  }
+}
+@-moz-keyframes animate-fade-out
+{
+   0% { opacity: 1;  }
+   100% { opacity: 0;  }
+}
+@keyframes animate-fade-out
+{
+   0% { opacity: 1;  }
+   100% { opacity: 0;  }
+}
+@-webkit-keyframes transform-lightspeed-in
+{
+   0% { -webkit-transform: translate(100%,0px) rotate(0deg) skewX(-30deg) ; opacity: 0;  }
+   60% { -webkit-transform: translate(-20%,0px) rotate(0deg) skewX(30deg) ; opacity: 1;  }
+   80% { -webkit-transform: translate(0px,0px) rotate(0deg) skewX(-15deg) ; opacity: 1;  }
+   100% { -webkit-transform: translate(0px,0px) rotate(0deg) skewX(0deg) ; opacity: 1;  }
+}
+@-moz-keyframes transform-lightspeed-in
+{
+   0% { -moz-transform: translate(100%,0px) rotate(0deg) skewX(-30deg) ; opacity: 0;  }
+   60% { -moz-transform: translate(-20%,0px) rotate(0deg) skewX(30deg) ; opacity: 1;  }
+   80% { -moz-transform: translate(0px,0px) rotate(0deg) skewX(-15deg) ; opacity: 1;  }
+   100% { -moz-transform: translate(0px,0px) rotate(0deg) skewX(0deg) ; opacity: 1;  }
+}
+@keyframes transform-lightspeed-in
+{
+   0% { transform: translate(100%,0px) rotate(0deg) skewX(-30deg) ; opacity: 0;  }
+   60% { transform: translate(-20%,0px) rotate(0deg) skewX(30deg) ; opacity: 1;  }
+   80% { transform: translate(0px,0px) rotate(0deg) skewX(-15deg) ; opacity: 1;  }
+   100% { transform: translate(0px,0px) rotate(0deg) skewX(0deg) ; opacity: 1;  }
+}
+@-webkit-keyframes transform-peek
+{
+   0% { -webkit-transform: rotate(0deg) ;  }
+   50% { -webkit-transform: rotate(10deg) scale(1.2,1.2) ;  }
+   100% { -webkit-transform: rotate(0deg) scale(1.0,1.0) ;  }
+}
+@-moz-keyframes transform-peek
+{
+   0% { -moz-transform: rotate(0deg) ;  }
+   50% { -moz-transform: rotate(10deg) scale(1.2,1.2) ;  }
+   100% { -moz-transform: rotate(0deg) scale(1.0,1.0) ;  }
+}
+@keyframes transform-peek
+{
+   0% { transform: rotate(0deg) ;  }
+   50% { transform: rotate(10deg) scale(1.2,1.2) ;  }
+   100% { transform: rotate(0deg) scale(1.0,1.0) ;  }
+}
+h1, .h1
+{
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 32px;
+   text-decoration: none;
+   color: #000000;
+   background-color: transparent;
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+}
+h2, .h2
+{
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 27px;
+   text-decoration: none;
+   color: #000000;
+   background-color: transparent;
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+}
+h3, .h3
+{
+   font-family: Arial;
+   font-size: 24px;
+   text-decoration: none;
+   color: #000000;
+   background-color: transparent;
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+}
+h4, .h4
+{
+   font-family: Arial;
+   font-size: 21px;
+   font-style: italic;
+   text-decoration: none;
+   color: #000000;
+   background-color: transparent;
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+}
+h5, .h5
+{
+   font-family: Arial;
+   font-size: 19px;
+   text-decoration: none;
+   color: #000000;
+   background-color: transparent;
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+}
+h6, .h6
+{
+   font-family: Arial;
+   font-size: 16px;
+   text-decoration: none;
+   color: #000000;
+   background-color: transparent;
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+}
+.ibiza
+{
+   font-family: Arial;
+   font-size: 16px;
+   text-decoration: none;
+   background-color: transparent;
+}
