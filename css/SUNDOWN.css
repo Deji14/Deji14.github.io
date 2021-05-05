@@ -1781,86 +1781,6 @@ body
    -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
    transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
 }
-#wb_Card5
-{
-   background-color: transparent;
-   background-image: url(../images/avatar_blue.png);
-   background-repeat: no-repeat;
-   background-position: center center;
-   background-attachment: scroll;
-   background-size: cover;
-   border: 1px solid #DEDEDE;
-   border-radius: 3px;
-   margin: 0;
-   padding: 0;
-   text-align: center;
-}
-#Card5-card-body
-{
-   font-size: 0px;
-}
-#Card5-card-item0
-{
-   box-sizing: border-box;
-   border-radius: 3px 3px 0 0;
-   margin: 50px 30px 20px 30px;
-   padding: 0;
-   color: #000000;
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 13px;
-}
-#wb_Card5:hover #Card5-card-item0
-{
-   -webkit-transform: translate(0px,0%) rotate(0deg) ;
-   -moz-transform: translate(0px,0%) rotate(0deg) ;
-   transform: translate(0px,0%) rotate(0deg) ;
-   opacity: 1.0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
-#Card5-card-item0
-{
-   -webkit-transform: translate(0px,200%) rotate(0deg) ;
-   -moz-transform: translate(0px,200%) rotate(0deg) ;
-   transform: translate(0px,200%) rotate(0deg) ;
-   opacity: 0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
-#Card5-card-item1
-{
-   box-sizing: border-box;
-   border-radius: 0 0 3px 3px;
-   margin: 50px 30px 20px 30px;
-   padding: 0;
-   color: #000000;
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 13px;
-}
-#wb_Card5:hover #Card5-card-item1
-{
-   -webkit-transform: translate(0px,0%) rotate(0deg) ;
-   -moz-transform: translate(0px,0%) rotate(0deg) ;
-   transform: translate(0px,0%) rotate(0deg) ;
-   opacity: 1.0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
-#Card5-card-item1
-{
-   -webkit-transform: translate(0px,200%) rotate(0deg) ;
-   -moz-transform: translate(0px,200%) rotate(0deg) ;
-   transform: translate(0px,200%) rotate(0deg) ;
-   opacity: 0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
 #wb_FontAwesomeIcon2
 {
    display: inline-block;
@@ -1912,7 +1832,7 @@ body
    float: left;
    clear: left;
    display: block;
-   z-index: 48;
+   z-index: 47;
 }
 #header
 {
@@ -2075,7 +1995,7 @@ body
    float: left;
    clear: left;
    display: block;
-   z-index: 50;
+   z-index: 49;
 }
 #wb_FontAwesomeIcon7
 {
@@ -2103,7 +2023,7 @@ body
    float: left;
    clear: left;
    display: block;
-   z-index: 49;
+   z-index: 48;
 }
 #wb_Shape4
 {
@@ -2137,16 +2057,6 @@ body
    height: 46px;
    text-align: center;
    z-index: 21;
-}
-#wb_Card5
-{
-   position: absolute;
-   left: 134px;
-   top: 3331px;
-   width: 210px;
-   height: 332px;
-   text-align: center;
-   z-index: 47;
 }
 #wb_FontAwesomeIcon11
 {
@@ -2284,7 +2194,7 @@ body
 }
 #header_Container
 {
-   width: 480px;
+   width: 407px;
 }
 #wb_Card1
 {
@@ -2393,7 +2303,7 @@ body
 }
 #home_Container
 {
-   width: 480px;
+   width: 407px;
 }
 #wb_introduction
 {
@@ -2454,7 +2364,7 @@ body
 }
 #Layer1_Container
 {
-   width: 480px;
+   width: 407px;
 }
 #wb_about
 {
@@ -2637,7 +2547,7 @@ body
 }
 #gallery_Container
 {
-   width: 480px;
+   width: 407px;
 }
 #wb_contact
 {
@@ -3463,8 +3373,8 @@ body
 }
 #wb_Image17
 {
-   width: 400px;
-   height: 379px;
+   width: 377px;
+   height: 357px;
    visibility: visible;
    display: inline-block;
    margin: 0;
@@ -3472,8 +3382,8 @@ body
 }
 #Image17
 {
-   width: 400px;
-   height: 379px;
+   width: 377px;
+   height: 357px;
 }
 #wb_Image3
 {
@@ -3490,8 +3400,8 @@ body
 {
    left: 0px;
    top: 226px;
-   width: 474px;
-   height: 424px;
+   width: 401px;
+   height: 400px;
    visibility: visible;
    display: inline;
    margin: 0;
@@ -3508,8 +3418,8 @@ body
 }
 #wb_Image4
 {
-   width: 400px;
-   height: 400px;
+   width: 327px;
+   height: 327px;
    visibility: visible;
    display: inline-block;
    margin: 0;
@@ -3517,8 +3427,8 @@ body
 }
 #Image4
 {
-   width: 400px;
-   height: 400px;
+   width: 327px;
+   height: 327px;
 }
 #wb_Heading1
 {
@@ -3793,91 +3703,6 @@ body
    transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
 }
 #Card4-card-item1
-{
-   -webkit-transform: translate(0px,200%) rotate(0deg) ;
-   -moz-transform: translate(0px,200%) rotate(0deg) ;
-   transform: translate(0px,200%) rotate(0deg) ;
-   opacity: 0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
-#wb_Card5
-{
-   left: 134px;
-   top: 3331px;
-   width: 210px;
-   height: 332px;
-   visibility: visible;
-   display: inline;
-   margin: 0;
-   color: #FFFFFF;
-   font-size: 16px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: url(../images/avatar_blue.png);
-   background-repeat: no-repeat;
-   background-position: center center !important;
-   background-attachment: scroll;
-   background-size: cover;
-   border-radius: 3px;
-}
-#Card5-card-item0
-{
-   box-sizing: border-box;
-   border-radius: 3px 3px 0 0;
-   margin: 50px 30px 20px 30px;
-   padding: 0;
-   color: #000000;
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 13px;
-}
-#wb_Card5:hover #Card5-card-item0
-{
-   -webkit-transform: translate(0px,0%) rotate(0deg) ;
-   -moz-transform: translate(0px,0%) rotate(0deg) ;
-   transform: translate(0px,0%) rotate(0deg) ;
-   opacity: 1.0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
-#Card5-card-item0
-{
-   -webkit-transform: translate(0px,200%) rotate(0deg) ;
-   -moz-transform: translate(0px,200%) rotate(0deg) ;
-   transform: translate(0px,200%) rotate(0deg) ;
-   opacity: 0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
-#Card5-card-item1
-{
-   box-sizing: border-box;
-   border-radius: 0 0 3px 3px;
-   margin: 50px 30px 20px 30px;
-   padding: 0;
-   color: #000000;
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 13px;
-}
-#wb_Card5:hover #Card5-card-item1
-{
-   -webkit-transform: translate(0px,0%) rotate(0deg) ;
-   -moz-transform: translate(0px,0%) rotate(0deg) ;
-   transform: translate(0px,0%) rotate(0deg) ;
-   opacity: 1.0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
-#Card5-card-item1
 {
    -webkit-transform: translate(0px,200%) rotate(0deg) ;
    -moz-transform: translate(0px,200%) rotate(0deg) ;
