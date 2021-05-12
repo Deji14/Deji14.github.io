@@ -1,3 +1,87 @@
+<?php
+function ValidateEmail($email)
+{
+   $pattern = '/^([0-9a-z]([-.\w]*[0-9a-z])*@(([0-9a-z])+([-\w]*[0-9a-z])*\.)+[a-z]{2,6})$/i';
+   return preg_match($pattern, $email);
+}
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['formid']) && $_POST['formid'] == 'layoutgrid2')
+{
+   $mailto = 'djsoft2001@gmail.com';
+   $mailfrom = isset($_POST['email']) ? $_POST['email'] : $mailto;
+   $subject = 'Website form';
+   $message = 'Values submitted from web site form:';
+   $success_url = '';
+   $error_url = '';
+   $eol = "\n";
+   $error = '';
+   $internalfields = array ("submit", "reset", "send", "filesize", "formid", "captcha_code", "recaptcha_challenge_field", "recaptcha_response_field", "g-recaptcha-response");
+   $boundary = md5(uniqid(time()));
+   $header  = 'From: '.$mailfrom.$eol;
+   $header .= 'Reply-To: '.$mailfrom.$eol;
+   $header .= 'MIME-Version: 1.0'.$eol;
+   $header .= 'Content-Type: multipart/mixed; boundary="'.$boundary.'"'.$eol;
+   $header .= 'X-Mailer: PHP v'.phpversion().$eol;
+   try
+   {
+      if (!ValidateEmail($mailfrom))
+      {
+         $error .= "The specified email address (" . $mailfrom . ") is invalid!\n<br>";
+         throw new Exception($error);
+      }
+      $message .= $eol;
+      $message .= "IP Address : ";
+      $message .= $_SERVER['REMOTE_ADDR'];
+      $message .= $eol;
+      foreach ($_POST as $key => $value)
+      {
+         if (!in_array(strtolower($key), $internalfields))
+         {
+            if (!is_array($value))
+            {
+               $message .= ucwords(str_replace("_", " ", $key)) . " : " . $value . $eol;
+            }
+            else
+            {
+               $message .= ucwords(str_replace("_", " ", $key)) . " : " . implode(",", $value) . $eol;
+            }
+         }
+      }
+      $body  = 'This is a multi-part message in MIME format.'.$eol.$eol;
+      $body .= '--'.$boundary.$eol;
+      $body .= 'Content-Type: text/plain; charset=ISO-8859-1'.$eol;
+      $body .= 'Content-Transfer-Encoding: 8bit'.$eol;
+      $body .= $eol.stripslashes($message).$eol;
+      if (!empty($_FILES))
+      {
+         foreach ($_FILES as $key => $value)
+         {
+             if ($_FILES[$key]['error'] == 0)
+             {
+                $body .= '--'.$boundary.$eol;
+                $body .= 'Content-Type: '.$_FILES[$key]['type'].'; name='.$_FILES[$key]['name'].$eol;
+                $body .= 'Content-Transfer-Encoding: base64'.$eol;
+                $body .= 'Content-Disposition: attachment; filename='.$_FILES[$key]['name'].$eol;
+                $body .= $eol.chunk_split(base64_encode(file_get_contents($_FILES[$key]['tmp_name']))).$eol;
+             }
+         }
+      }
+      $body .= '--'.$boundary.'--'.$eol;
+      if ($mailto != '')
+      {
+         mail($mailto, $subject, $body, $header);
+      }
+      header('Location: '.$success_url);
+   }
+   catch (Exception $e)
+   {
+      $errorcode = file_get_contents($error_url);
+      $replace = "##error##";
+      $errorcode = str_replace($replace, $e->getMessage(), $errorcode);
+      echo $errorcode;
+   }
+   exit;
+}
+?>
 <!doctype html>
 <html>
 <head>
@@ -14,12 +98,11 @@
 </head>
 <body>
    <div id="container">
-      <label for="" id="Label2">Get in touch! We are here for you...</label>
    </div>
    <header id="header">
       <div id="header_Container">
          <div id="wb_Image3">
-            <a href="./Sundown.html"><img src="images/full.jpg" id="Image3" alt=""></a></div>
+            <a href="./Sundown.php"><img src="images/full.jpg" id="Image3" alt=""></a></div>
          <div id="wb_Breadcrumb1">
             <ul id="Breadcrumb1">
                <li><a href="#home">home</a></li>
@@ -79,10 +162,10 @@
                   <span style="color:#2D2E33;font-family:Arial;font-size:15px;"><em>{requires content}<br><br></em><strong>John Doe<br></strong>CEO</span>
                </div>
                <div id="wb_FontAwesomeIcon4" data-bottom-top="transform:translate(-200%,0px) rotate(360deg);" data--250-bottom="transform:translate(0%,0px) rotate(0deg);">
-                  <a href="./Sundown.html"><div id="FontAwesomeIcon4"><i class="fa fa-facebook-f"></i></div></a>
+                  <a href="./Sundown.php"><div id="FontAwesomeIcon4"><i class="fa fa-facebook-f"></i></div></a>
                </div>
                <div id="wb_FontAwesomeIcon3" data-bottom-top="transform:translate(200%,0px) rotate(360deg);" data--250-bottom="transform:translate(0%,0px) rotate(0deg);">
-                  <a href="./Sundown.html"><div id="FontAwesomeIcon3"><i class="fa fa-envelope-o"></i></div></a>
+                  <a href="./Sundown.php"><div id="FontAwesomeIcon3"><i class="fa fa-envelope-o"></i></div></a>
                </div>
             </div>
             <div class="col-2">
@@ -98,16 +181,16 @@
          <div class="row">
             <div class="col-1">
                <div id="wb_FontAwesomeIcon2" data-bottom-top="transform:translate(-200%,0px) rotate(360deg);opacity:0;" data--250-bottom="transform:translate(0%,0px) rotate(0deg);opacity:1;">
-                  <a href="./Sundown.html"><div id="FontAwesomeIcon2"><i class="fa fa-sun-o"></i></div></a>
+                  <a href="./Sundown.php"><div id="FontAwesomeIcon2"><i class="fa fa-sun-o"></i></div></a>
                </div>
                <div id="wb_FontAwesomeIcon1" data-bottom-top="transform:translate(-200%,0px) rotate(360deg);opacity:0;" data--250-bottom="transform:translate(0%,0px) rotate(0deg);opacity:1;">
-                  <a href="./Sundown.html"><div id="FontAwesomeIcon1"><i class="fa fa-briefcase"></i></div></a>
+                  <a href="./Sundown.php"><div id="FontAwesomeIcon1"><i class="fa fa-briefcase"></i></div></a>
                </div>
                <div id="wb_FontAwesomeIcon5" data-bottom-top="transform:translate(-200%,0px) rotate(360deg);opacity:0;" data--250-bottom="transform:translate(0%,0px) rotate(0deg);opacity:1;">
-                  <a href="./Sundown.html"><div id="FontAwesomeIcon5"><i class="fa fa-gears"></i></div></a>
+                  <a href="./Sundown.php"><div id="FontAwesomeIcon5"><i class="fa fa-gears"></i></div></a>
                </div>
                <div id="wb_FontAwesomeIcon6" data-bottom-top="transform:translate(-200%,0px) rotate(360deg);opacity:0;" data--250-bottom="transform:translate(0%,0px) rotate(0deg);opacity:1;">
-                  <a href="./Sundown.html"><div id="FontAwesomeIcon6"><i class="fa fa-smile-o"></i></div></a>
+                  <a href="./Sundown.php"><div id="FontAwesomeIcon6"><i class="fa fa-smile-o"></i></div></a>
                </div>
                <div id="wb_Text5">
                   <span style="background-color:#FFFFFF;color:#000000;font-family:'MS Serif';font-size:19px;"><strong>WHAT WE DO</strong></span>
@@ -120,7 +203,7 @@
                </div>
             </div>
             <div class="col-2">
-               <div id="wb_Image2" data-bottom-top="transform:translate(200%,0px) rotate(360deg);opacity:0;" data--250-bottom="transform:translate(0%,0px) rotate(0deg);opacity:1;">
+               <div id="wb_Image2">
                   <img src="images/SUN07.jpg" id="Image2" alt="">
                </div>
             </div>
@@ -168,31 +251,27 @@
                   <a href="https://web.facebook.com/sundowntubingtesting/"><div id="FontAwesomeIcon7"><i class="fa fa-facebook"></i></div></a>
                </div>
                <div id="wb_FontAwesomeIcon11" data--100-bottom="transform:translate(0%,0px) rotate(0deg);" data-bottom-top="transform:translate(-400%,0px) rotate(360deg);">
-                  <a href="./Sundown.html"><div id="FontAwesomeIcon11"><i class="fa fa-youtube"></i></div></a>
+                  <a href="./Sundown.php"><div id="FontAwesomeIcon11"><i class="fa fa-youtube"></i></div></a>
                </div>
                <label for="" id="Label1" data--100-bottom="transform:translate(0%,0px);" data-bottom-top="transform:translate(400%,0px);">Phone: +1 806-229-3214</label>
-               <div id="wb_FontAwesomeIcon9" data--100-bottom="transform:translate(0%,0px) rotate(0deg);" data-bottom-top="transform:translate(400%,0px) rotate(360deg);">
-                  <a href="./Sundown.html"><div id="FontAwesomeIcon9"><i class="fa fa-envelope-o"></i></div></a>
-               </div>
-               <div id="wb_IconFont1">
-                  <a href="tel:+1 806-229-3214"><div id="IconFont1"><i class="material-icons">&#xe0b0;</i></div></a>
-               </div>
-               <div id="wb_JavaScript1">
-                  <div id="GoogleMaps"></div>
-
-               </div>
                <div id="wb_LayoutGrid2">
-                  <div id="LayoutGrid2">
+                  <form name="LayoutGrid2" method="post" action="<?php echo basename(__FILE__); ?>" enctype="multipart/form-data" id="LayoutGrid2">
+                     <input type="hidden" name="formid" value="layoutgrid2">
                      <div class="row">
                         <div class="col-1">
-                           <input type="text" id="Editbox1" name="name" value="" spellcheck="false" placeholder="Your name*">
                            <input type="text" id="Editbox2" name="email" value="" spellcheck="false" placeholder="Your ermail*">
                            <input type="text" id="Editbox3" name="phone" value="" spellcheck="false" placeholder="Your phone number">
                            <textarea name="TextArea1" id="TextArea1" rows="5" cols="110" autocomplete="off" spellcheck="false" placeholder="Add comments"></textarea>
                            <input type="submit" id="Button1" name="" value="Submit">
+<!-- Google Map -->
+                           <iframe
+ src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.4011306560665!2d-102.49112208480028!3d33.464905780769726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86fdbede710cddd5%3A0xc06e4b732a49e6a2!2sSundown%20Tubing%20Testing!5e0!3m2!1sen!2sng!4v1620852023551!5m2!1sen!2sng" 
+="" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                           </iframe
+>
                         </div>
                      </div>
-                  </div>
+                  </form>
                </div>
             </div>
          </div>
@@ -212,7 +291,6 @@
    <script src="jquery-1.12.4.min.js"></script>
    <script src="skrollr.min.js"></script>
    <script src="wwb15.min.js"></script>
-      <script src="https://maps.google.com/maps/api/js?key=AIzaSyAddQuh7UoAmqdBa-3BNUtFF74tcVBI5BU"></script>
    <script src="Sundown.js"></script>
 </body>
 </html>
