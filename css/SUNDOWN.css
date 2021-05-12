@@ -1,7 +1,9 @@
-html, body, #container
+div#container
 {
-   width: 100%;
-   height: 100%;
+   width: 970px;
+   position: relative;
+   margin: 0 auto 0 auto;
+   text-align: left;
 }
 body
 {
@@ -12,7 +14,7 @@ body
    font-size: 13px;
    line-height: 1.1875;
    margin: 0;
-   padding: 0;
+   text-align: center;
    overflow-x: hidden;
 }
 #header
@@ -20,93 +22,6 @@ body
    background-color: #FFFFFF;
    background-image: none;
    box-sizing: border-box;
-}
-#wb_Card1
-{
-   position: relative;
-   display: inline-block;
-   -webkit-flex-direction: column;
-   flex-direction: column;
-   background-color: transparent;
-   background-image: url(../images/avatar_blue.png);
-   background-repeat: no-repeat;
-   background-position: center center;
-   background-attachment: scroll;
-   background-size: cover;
-   border: 1px solid #DEDEDE;
-   border-radius: 3px;
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   text-align: center;
-}
-#Card1-card-body
-{
-   -webkit-flex: 1 1 auto;
-   flex: 1 1 auto;
-   font-size: 0px;
-}
-#Card1-card-item0
-{
-   box-sizing: border-box;
-   border-radius: 3px 3px 0 0;
-   margin: 50px 30px 20px 30px;
-   padding: 0;
-   color: #000000;
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 13px;
-}
-#wb_Card1:hover #Card1-card-item0
-{
-   -webkit-transform: translate(0px,0%) rotate(0deg) ;
-   -moz-transform: translate(0px,0%) rotate(0deg) ;
-   transform: translate(0px,0%) rotate(0deg) ;
-   opacity: 1.0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
-#Card1-card-item0
-{
-   -webkit-transform: translate(0px,200%) rotate(0deg) ;
-   -moz-transform: translate(0px,200%) rotate(0deg) ;
-   transform: translate(0px,200%) rotate(0deg) ;
-   opacity: 0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
-#Card1-card-item1
-{
-   box-sizing: border-box;
-   border-radius: 0 0 3px 3px;
-   margin: 50px 30px 20px 30px;
-   padding: 0;
-   color: #000000;
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 13px;
-}
-#wb_Card1:hover #Card1-card-item1
-{
-   -webkit-transform: translate(0px,0%) rotate(0deg) ;
-   -moz-transform: translate(0px,0%) rotate(0deg) ;
-   transform: translate(0px,0%) rotate(0deg) ;
-   opacity: 1.0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
-#Card1-card-item1
-{
-   -webkit-transform: translate(0px,200%) rotate(0deg) ;
-   -moz-transform: translate(0px,200%) rotate(0deg) ;
-   transform: translate(0px,200%) rotate(0deg) ;
-   opacity: 0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
 }
 #home
 {
@@ -270,106 +185,6 @@ body
 @media (max-width: 480px)
 {
 #about > .row > .col-1, #about > .row > .col-2
-{
-   float: none;
-   width: 100%;
-}
-}
-#wb_portfolio
-{
-   clear: both;
-   position: relative;
-   table-layout: fixed;
-   display: table;
-   text-align: center;
-   width: 100%;
-   background-color: #FFFFFF;
-   background-image: none;
-   border: 0px solid #CCCCCC;
-   box-sizing: border-box;
-   margin: 0;
-}
-#portfolio
-{
-   box-sizing: border-box;
-   padding: 25px 15px 25px 15px;
-   margin-right: auto;
-   margin-left: auto;
-}
-#portfolio > .row
-{
-   margin-right: -15px;
-   margin-left: -15px;
-}
-#portfolio > .row > .col-1, #portfolio > .row > .col-2, #portfolio > .row > .col-3, #portfolio > .row > .col-4
-{
-   box-sizing: border-box;
-   font-size: 0px;
-   min-height: 1px;
-   padding-right: 15px;
-   padding-left: 15px;
-   position: relative;
-}
-#portfolio
-{
-   width: 970px;
-}
-#portfolio > .row > .col-1, #portfolio > .row > .col-2, #portfolio > .row > .col-3, #portfolio > .row > .col-4
-{
-   float: left;
-}
-#portfolio > .row > .col-1
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   width: 25%;
-   text-align: center;
-}
-#portfolio > .row > .col-2
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   width: 25%;
-   text-align: center;
-}
-#portfolio > .row > .col-3
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   width: 25%;
-   text-align: center;
-}
-#portfolio > .row > .col-4
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   width: 25%;
-   text-align: left;
-}
-#portfolio:before,
-#portfolio:after,
-#portfolio .row:before,
-#portfolio .row:after
-{
-   display: table;
-   content: " ";
-}
-#portfolio:after,
-#portfolio .row:after
-{
-   clear: both;
-}
-@media (max-width: 480px)
-{
-#portfolio
-{
-   width: 100%;
-}
-#portfolio > .row > .col-1, #portfolio > .row > .col-2, #portfolio > .row > .col-3, #portfolio > .row > .col-4
 {
    float: none;
    width: 100%;
@@ -696,43 +511,6 @@ body
 {
    color: #FFFFFF;
 }
-#wb_FontAwesomeIcon8
-{
-   background-color: #FFFFFF;
-   background-image: none;
-   border: 2px solid #FFFFFF;
-   border-radius: 50%;
-   text-align: center;
-   margin: 0px 10px 0px 0px;
-   padding: 10px 10px 10px 10px;
-   vertical-align: top;
-   display:inline-block;
-   position:relative;
-}
-#wb_FontAwesomeIcon8:hover
-{
-   background-color: #46C0CE;
-   background-image: none;
-   border: 2px solid #FFFFFF;
-}
-#FontAwesomeIcon8
-{
-   height: 16px;
-   width: 16px;
-}
-#FontAwesomeIcon8 i
-{
-   color: #000000;
-   display: inline-block;
-   font-size: 16px;
-   line-height: 16px;
-   vertical-align: middle;
-   width: 13px;
-}
-#wb_FontAwesomeIcon8:hover i
-{
-   color: #FFFFFF;
-}
 #wb_FontAwesomeIcon9
 {
    background-color: #FFFFFF;
@@ -767,43 +545,6 @@ body
    width: 15px;
 }
 #wb_FontAwesomeIcon9:hover i
-{
-   color: #FFFFFF;
-}
-#wb_FontAwesomeIcon10
-{
-   background-color: #FFFFFF;
-   background-image: none;
-   border: 2px solid #FFFFFF;
-   border-radius: 50%;
-   text-align: center;
-   margin: 0px 10px 0px 0px;
-   padding: 10px 10px 10px 10px;
-   vertical-align: top;
-   display:inline-block;
-   position:relative;
-}
-#wb_FontAwesomeIcon10:hover
-{
-   background-color: #46C0CE;
-   background-image: none;
-   border: 2px solid #FFFFFF;
-}
-#FontAwesomeIcon10
-{
-   height: 16px;
-   width: 16px;
-}
-#FontAwesomeIcon10 i
-{
-   color: #000000;
-   display: inline-block;
-   font-size: 16px;
-   line-height: 16px;
-   vertical-align: middle;
-   width: 12px;
-}
-#wb_FontAwesomeIcon10:hover i
 {
    color: #FFFFFF;
 }
@@ -1483,10 +1224,21 @@ body
    width: 100%;
    height: 100%;
 }
-#InlineFrame2
+#wb_InlineFrame2
 {
    border: 3px solid #000000;
    margin: 0;
+   overflow: auto;
+   -webkit-overflow-scrolling: touch;
+}
+#InlineFrame2
+{
+   border-width: 0;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
 }
 #wb_Image4
 {
@@ -1519,267 +1271,6 @@ body
    font-size: 32px;
    margin: 0;
    text-align: center;
-}
-#wb_Card2
-{
-   position: relative;
-   display: inline-block;
-   -webkit-flex-direction: column;
-   flex-direction: column;
-   background-color: transparent;
-   background-image: url(../images/avatar_blue.png);
-   background-repeat: no-repeat;
-   background-position: center center;
-   background-attachment: scroll;
-   background-size: cover;
-   border: 1px solid #DEDEDE;
-   border-radius: 3px;
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   text-align: center;
-}
-#Card2-card-body
-{
-   -webkit-flex: 1 1 auto;
-   flex: 1 1 auto;
-   font-size: 0px;
-}
-#Card2-card-item0
-{
-   box-sizing: border-box;
-   border-radius: 3px 3px 0 0;
-   margin: 50px 30px 20px 30px;
-   padding: 0;
-   color: #000000;
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 13px;
-}
-#wb_Card2:hover #Card2-card-item0
-{
-   -webkit-transform: translate(0px,0%) rotate(0deg) ;
-   -moz-transform: translate(0px,0%) rotate(0deg) ;
-   transform: translate(0px,0%) rotate(0deg) ;
-   opacity: 1.0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
-#Card2-card-item0
-{
-   -webkit-transform: translate(0px,200%) rotate(0deg) ;
-   -moz-transform: translate(0px,200%) rotate(0deg) ;
-   transform: translate(0px,200%) rotate(0deg) ;
-   opacity: 0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
-#Card2-card-item1
-{
-   box-sizing: border-box;
-   border-radius: 0 0 3px 3px;
-   margin: 50px 30px 20px 30px;
-   padding: 0;
-   color: #000000;
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 13px;
-}
-#wb_Card2:hover #Card2-card-item1
-{
-   -webkit-transform: translate(0px,0%) rotate(0deg) ;
-   -moz-transform: translate(0px,0%) rotate(0deg) ;
-   transform: translate(0px,0%) rotate(0deg) ;
-   opacity: 1.0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
-#Card2-card-item1
-{
-   -webkit-transform: translate(0px,200%) rotate(0deg) ;
-   -moz-transform: translate(0px,200%) rotate(0deg) ;
-   transform: translate(0px,200%) rotate(0deg) ;
-   opacity: 0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
-#wb_Card3
-{
-   position: relative;
-   display: inline-block;
-   -webkit-flex-direction: column;
-   flex-direction: column;
-   background-color: transparent;
-   background-image: url(../images/avatar_blue.png);
-   background-repeat: no-repeat;
-   background-position: center center;
-   background-attachment: scroll;
-   background-size: cover;
-   border: 1px solid #DEDEDE;
-   border-radius: 3px;
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   text-align: center;
-}
-#Card3-card-body
-{
-   -webkit-flex: 1 1 auto;
-   flex: 1 1 auto;
-   font-size: 0px;
-}
-#Card3-card-item0
-{
-   box-sizing: border-box;
-   border-radius: 3px 3px 0 0;
-   margin: 50px 30px 20px 30px;
-   padding: 0;
-   color: #000000;
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 13px;
-}
-#wb_Card3:hover #Card3-card-item0
-{
-   -webkit-transform: translate(0px,0%) rotate(0deg) ;
-   -moz-transform: translate(0px,0%) rotate(0deg) ;
-   transform: translate(0px,0%) rotate(0deg) ;
-   opacity: 1.0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
-#Card3-card-item0
-{
-   -webkit-transform: translate(0px,200%) rotate(0deg) ;
-   -moz-transform: translate(0px,200%) rotate(0deg) ;
-   transform: translate(0px,200%) rotate(0deg) ;
-   opacity: 0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
-#Card3-card-item1
-{
-   box-sizing: border-box;
-   border-radius: 0 0 3px 3px;
-   margin: 50px 30px 20px 30px;
-   padding: 0;
-   color: #000000;
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 13px;
-}
-#wb_Card3:hover #Card3-card-item1
-{
-   -webkit-transform: translate(0px,0%) rotate(0deg) ;
-   -moz-transform: translate(0px,0%) rotate(0deg) ;
-   transform: translate(0px,0%) rotate(0deg) ;
-   opacity: 1.0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
-#Card3-card-item1
-{
-   -webkit-transform: translate(0px,200%) rotate(0deg) ;
-   -moz-transform: translate(0px,200%) rotate(0deg) ;
-   transform: translate(0px,200%) rotate(0deg) ;
-   opacity: 0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
-#wb_Card4
-{
-   position: relative;
-   display: inline-block;
-   -webkit-flex-direction: column;
-   flex-direction: column;
-   background-color: transparent;
-   background-image: url(../images/avatar_blue.png);
-   background-repeat: no-repeat;
-   background-position: center center;
-   background-attachment: scroll;
-   background-size: cover;
-   border: 1px solid #DEDEDE;
-   border-radius: 3px;
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   text-align: center;
-}
-#Card4-card-body
-{
-   -webkit-flex: 1 1 auto;
-   flex: 1 1 auto;
-   font-size: 0px;
-}
-#Card4-card-item0
-{
-   box-sizing: border-box;
-   border-radius: 3px 3px 0 0;
-   margin: 50px 30px 20px 30px;
-   padding: 0;
-   color: #000000;
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 13px;
-}
-#wb_Card4:hover #Card4-card-item0
-{
-   -webkit-transform: translate(0px,0%) rotate(0deg) ;
-   -moz-transform: translate(0px,0%) rotate(0deg) ;
-   transform: translate(0px,0%) rotate(0deg) ;
-   opacity: 1.0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
-#Card4-card-item0
-{
-   -webkit-transform: translate(0px,200%) rotate(0deg) ;
-   -moz-transform: translate(0px,200%) rotate(0deg) ;
-   transform: translate(0px,200%) rotate(0deg) ;
-   opacity: 0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
-#Card4-card-item1
-{
-   box-sizing: border-box;
-   border-radius: 0 0 3px 3px;
-   margin: 50px 30px 20px 30px;
-   padding: 0;
-   color: #000000;
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 13px;
-}
-#wb_Card4:hover #Card4-card-item1
-{
-   -webkit-transform: translate(0px,0%) rotate(0deg) ;
-   -moz-transform: translate(0px,0%) rotate(0deg) ;
-   transform: translate(0px,0%) rotate(0deg) ;
-   opacity: 1.0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
-#Card4-card-item1
-{
-   -webkit-transform: translate(0px,200%) rotate(0deg) ;
-   -moz-transform: translate(0px,200%) rotate(0deg) ;
-   transform: translate(0px,200%) rotate(0deg) ;
-   opacity: 0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
 }
 #wb_IconFont1
 {
@@ -1832,13 +1323,212 @@ body
 {
    color: #337AB7;
 }
+#Label2
+{
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 20px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+   vertical-align: top;
+}
+#wb_LayoutGrid2
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+}
+#LayoutGrid2
+{
+   box-sizing: border-box;
+   padding: 0px 15px 0px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#LayoutGrid2 > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#LayoutGrid2 > .row > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#LayoutGrid2
+{
+   width: 940px;
+}
+#LayoutGrid2 > .row > .col-1
+{
+   float: left;
+}
+#LayoutGrid2 > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 100%;
+   text-align: left;
+}
+#LayoutGrid2:before,
+#LayoutGrid2:after,
+#LayoutGrid2 .row:before,
+#LayoutGrid2 .row:after
+{
+   display: table;
+   content: " ";
+}
+#LayoutGrid2:after,
+#LayoutGrid2 .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#LayoutGrid2
+{
+   width: 100%;
+}
+#LayoutGrid2 > .row > .col-1
+{
+   float: none;
+   width: 100% !important;
+}
+}
+#Editbox1
+{
+   border: 2px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   box-sizing: border-box;
+   line-height: 27px;
+   padding: 4px 4px 4px 4px;
+   margin: 0px 0px 10px 0px;
+   text-align: left;
+}
+#Editbox1:focus
+{
+   border-color: #66AFE9;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.60);
+   outline: 0;
+}
+#Editbox2
+{
+   border: 2px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   box-sizing: border-box;
+   line-height: 26px;
+   padding: 4px 4px 4px 4px;
+   margin: 0px 0px 10px 0px;
+   text-align: left;
+}
+#Editbox2:focus
+{
+   border-color: #66AFE9;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.60);
+   outline: 0;
+}
+#Editbox3
+{
+   border: 2px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   box-sizing: border-box;
+   line-height: 26px;
+   padding: 4px 4px 4px 4px;
+   margin: 0px 0px 10px 0px;
+   text-align: left;
+}
+#Editbox3:focus
+{
+   border-color: #66AFE9;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.60);
+   outline: 0;
+}
+#TextArea1
+{
+   border: 2px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   box-sizing: border-box;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+   overflow: auto;
+   resize: none;
+}
+#TextArea1:focus
+{
+   border-color: #66AFE9;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.60);
+   outline: 0;
+}
+#Button1
+{
+   border: 0px solid #2E6DA4;
+   background-color: #677892;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   -webkit-appearance: none;
+   margin: 10px 0px 10px 0px;
+}
+#TextArea1
+{
+   display: block;
+   width: 100%;
+   height: 100px;
+   z-index: 36;
+}
 #wb_FontAwesomeIcon2
 {
    display: inline-block;
    width: 46px;
    height: 46px;
    text-align: center;
-   z-index: 19;
+   z-index: 15;
 }
 #wb_Breadcrumb1
 {
@@ -1855,7 +1545,7 @@ body
    display: inline-block;
    width: 100px;
    height: 2px;
-   z-index: 38;
+   z-index: 39;
    position: relative;
 }
 #wb_FontAwesomeIcon1
@@ -1864,15 +1554,7 @@ body
    width: 46px;
    height: 46px;
    text-align: center;
-   z-index: 20;
-}
-#wb_Card1
-{
-   display: inline-block;
-   width: 210px;
-   height: 332px;
-   text-align: center;
-   z-index: 17;
+   z-index: 16;
 }
 #home
 {
@@ -1883,7 +1565,7 @@ body
    float: left;
    clear: left;
    display: block;
-   z-index: 48;
+   z-index: 55;
 }
 #header
 {
@@ -1900,10 +1582,10 @@ body
    display: inline-block;
    width: 178px;
    height: 2px;
-   z-index: 24;
+   z-index: 20;
    position: relative;
 }
-#InlineFrame2
+#wb_InlineFrame2
 {
    position: absolute;
    left: 0px;
@@ -1911,6 +1593,13 @@ body
    width: 964px;
    height: 408px;
    z-index: 7;
+}
+#Button1
+{
+   display: block;
+   width: 100%;
+   height: 34px;
+   z-index: 37;
 }
 #wb_Text17
 {
@@ -1920,22 +1609,14 @@ body
    width: 288px;
    height: 21px;
    text-align: center;
-   z-index: 35;
+   z-index: 31;
 }
 #wb_Image2
 {
    display: inline-block;
    width: 100%;
    height: auto;
-   z-index: 26;
-}
-#wb_Card3
-{
-   display: inline-block;
-   width: 210px;
-   height: 332px;
-   text-align: center;
-   z-index: 15;
+   z-index: 22;
 }
 #wb_Heading8
 {
@@ -1946,13 +1627,12 @@ body
    height: 51px;
    z-index: 2;
 }
-#wb_Card2
+#Editbox1
 {
-   display: inline-block;
-   width: 210px;
-   height: 332px;
-   text-align: center;
-   z-index: 18;
+   display: block;
+   width: 100%;
+   height: 39px;
+   z-index: 33;
 }
 #wb_Image3
 {
@@ -1962,6 +1642,13 @@ body
    width: 159px;
    height: 66px;
    z-index: 0;
+}
+#Editbox2
+{
+   display: block;
+   width: 100%;
+   height: 38px;
+   z-index: 34;
 }
 #wb_Image4
 {
@@ -1978,13 +1665,25 @@ body
    margin-right: auto;
    text-align: left;
 }
+#Editbox3
+{
+   display: block;
+   width: 100%;
+   height: 38px;
+   z-index: 35;
+}
+#GoogleMaps
+{
+   width: 100%;
+   height: 100%;
+}
 #wb_FontAwesomeIcon9
 {
    display: inline-block;
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 45;
+   z-index: 44;
 }
 #wb_Shape10
 {
@@ -1993,7 +1692,7 @@ body
    top: 80px;
    width: 100px;
    height: 2px;
-   z-index: 36;
+   z-index: 32;
 }
 #wb_Shape9
 {
@@ -2003,14 +1702,6 @@ body
    z-index: 10;
    position: relative;
 }
-#wb_FontAwesomeIcon8
-{
-   display: inline-block;
-   width: 16px;
-   height: 16px;
-   text-align: center;
-   z-index: 41;
-}
 #wb_Image8
 {
    position: absolute;
@@ -2018,7 +1709,7 @@ body
    top: 100px;
    width: 121px;
    height: 161px;
-   z-index: 27;
+   z-index: 23;
 }
 #home_Container
 {
@@ -2034,7 +1725,7 @@ body
    width: 63px;
    height: 46px;
    text-align: center;
-   z-index: 46;
+   z-index: 45;
 }
 #wb_Image9
 {
@@ -2043,7 +1734,7 @@ body
    top: 100px;
    width: 121px;
    height: 161px;
-   z-index: 28;
+   z-index: 24;
 }
 #gallery
 {
@@ -2054,7 +1745,7 @@ body
    float: left;
    clear: left;
    display: block;
-   z-index: 50;
+   z-index: 57;
 }
 #wb_FontAwesomeIcon7
 {
@@ -2062,7 +1753,7 @@ body
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 40;
+   z-index: 41;
 }
 #gallery_Container
 {
@@ -2082,7 +1773,7 @@ body
    float: left;
    clear: left;
    display: block;
-   z-index: 49;
+   z-index: 56;
 }
 #wb_Shape4
 {
@@ -2092,13 +1783,20 @@ body
    z-index: 4;
    position: relative;
 }
+#wb_JavaScript1
+{
+   display: inline-block;
+   width: 100%;
+   height: 292px;
+   z-index: 46;
+}
 #wb_FontAwesomeIcon6
 {
    display: inline-block;
    width: 46px;
    height: 46px;
    text-align: center;
-   z-index: 22;
+   z-index: 18;
 }
 #wb_Heading1
 {
@@ -2115,7 +1813,7 @@ body
    width: 46px;
    height: 46px;
    text-align: center;
-   z-index: 21;
+   z-index: 17;
 }
 #wb_FontAwesomeIcon11
 {
@@ -2123,23 +1821,7 @@ body
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 43;
-}
-#wb_FontAwesomeIcon10
-{
-   display: inline-block;
-   width: 16px;
-   height: 16px;
-   text-align: center;
    z-index: 42;
-}
-#wb_Card4
-{
-   display: inline-block;
-   width: 210px;
-   height: 332px;
-   text-align: center;
-   z-index: 16;
 }
 #wb_FontAwesomeIcon4
 {
@@ -2157,11 +1839,21 @@ body
    margin-right: auto;
    text-align: left;
 }
+#Label2
+{
+   position: absolute;
+   left: 15px;
+   top: 1484px;
+   width: 447px;
+   height: 31px;
+   line-height: 31px;
+   z-index: 54;
+}
 #Label1
 {
    display: inline-block;
    width: 194px;
-   z-index: 44;
+   z-index: 43;
 }
 #wb_Image15
 {
@@ -2170,7 +1862,7 @@ body
    top: 285px;
    width: 121px;
    height: 161px;
-   z-index: 34;
+   z-index: 30;
 }
 #wb_Image14
 {
@@ -2179,7 +1871,7 @@ body
    top: 285px;
    width: 121px;
    height: 161px;
-   z-index: 33;
+   z-index: 29;
 }
 #wb_Image13
 {
@@ -2188,7 +1880,7 @@ body
    top: 285px;
    width: 212px;
    height: 159px;
-   z-index: 32;
+   z-index: 28;
 }
 #wb_Image12
 {
@@ -2197,7 +1889,7 @@ body
    top: 100px;
    width: 212px;
    height: 159px;
-   z-index: 31;
+   z-index: 27;
 }
 #wb_Image11
 {
@@ -2206,7 +1898,7 @@ body
    top: 285px;
    width: 121px;
    height: 161px;
-   z-index: 30;
+   z-index: 26;
 }
 #wb_Image10
 {
@@ -2215,7 +1907,7 @@ body
    top: 100px;
    width: 121px;
    height: 161px;
-   z-index: 29;
+   z-index: 25;
 }
 #wb_FontAwesomeIcon3
 {
@@ -2234,6 +1926,10 @@ body
 }
 @media only screen and (max-width: 969px)
 {
+div#container
+{
+   width: 476px;
+}
 body
 {
    background-color: #8EB1F3;
@@ -2254,89 +1950,6 @@ body
 #header_Container
 {
    width: 476px;
-}
-#wb_Card1
-{
-   width: 210px;
-   height: 332px;
-   visibility: visible;
-   display: inline-block;
-   margin: 0;
-   color: #000000;
-   font-size: 13px;
-   font-family: Georgia;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: url(../images/avatar_blue.png);
-   background-repeat: no-repeat;
-   background-position: center center !important;
-   background-attachment: scroll;
-   background-size: cover;
-   border-radius: 3px;
-}
-#Card1-card-item0
-{
-   box-sizing: border-box;
-   border-radius: 3px 3px 0 0;
-   margin: 50px 30px 20px 30px;
-   padding: 0;
-   color: #000000;
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 13px;
-}
-#wb_Card1:hover #Card1-card-item0
-{
-   -webkit-transform: translate(0px,0%) rotate(0deg) ;
-   -moz-transform: translate(0px,0%) rotate(0deg) ;
-   transform: translate(0px,0%) rotate(0deg) ;
-   opacity: 1.0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
-#Card1-card-item0
-{
-   -webkit-transform: translate(0px,200%) rotate(0deg) ;
-   -moz-transform: translate(0px,200%) rotate(0deg) ;
-   transform: translate(0px,200%) rotate(0deg) ;
-   opacity: 0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
-#Card1-card-item1
-{
-   box-sizing: border-box;
-   border-radius: 0 0 3px 3px;
-   margin: 50px 30px 20px 30px;
-   padding: 0;
-   color: #000000;
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 13px;
-}
-#wb_Card1:hover #Card1-card-item1
-{
-   -webkit-transform: translate(0px,0%) rotate(0deg) ;
-   -moz-transform: translate(0px,0%) rotate(0deg) ;
-   transform: translate(0px,0%) rotate(0deg) ;
-   opacity: 1.0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
-#Card1-card-item1
-{
-   -webkit-transform: translate(0px,200%) rotate(0deg) ;
-   -moz-transform: translate(0px,200%) rotate(0deg) ;
-   transform: translate(0px,200%) rotate(0deg) ;
-   opacity: 0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
 }
 #home
 {
@@ -2471,73 +2084,6 @@ body
    border: 0px solid #FFFFFF;
    border-radius: 0px;
    text-align: left;
-}
-#wb_portfolio
-{
-   visibility: visible;
-   display: table;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: #FFFFFF;
-   background-image: none;
-}
-#wb_portfolio
-{
-   margin-top: 0px;
-   margin-bottom: 0px;
-}
-#portfolio
-{
-   padding: 25px 15px 25px 15px;
-}
-#portfolio .row
-{
-   margin-right: -15px;
-   margin-left: -15px;
-}
-#portfolio
-{
-   width: 100%;
-}
-#portfolio > .row > .col-1, #portfolio > .row > .col-2, #portfolio > .row > .col-3, #portfolio > .row > .col-4
-{
-   padding-right: 15px;
-   padding-left: 15px;
-}
-#portfolio > .row > .col-1
-{
-   display: block;
-   width: 100%;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
-   text-align: center;
-}
-#portfolio > .row > .col-2
-{
-   display: block;
-   width: 100%;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
-   text-align: center;
-}
-#portfolio > .row > .col-3
-{
-   display: block;
-   width: 100%;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
-   text-align: center;
-}
-#portfolio > .row > .col-4
-{
-   display: block;
-   width: 100%;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
-   text-align: center;
 }
 #wb_LayoutGrid4
 {
@@ -2777,35 +2323,6 @@ body
    background-image: none;
    border: 2px solid #FFFFFF;
 }
-#wb_FontAwesomeIcon8
-{
-   width: 16px;
-   height: 16px;
-   visibility: visible;
-   display: inline-block;
-   margin: 0px 10px 0px 0px;
-   padding: 10px 10px 10px 10px;
-   color: #000000;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: #FFFFFF;
-   background-image: none;
-   border-radius: 50%;
-}
-#FontAwesomeIcon8
-{
-   width: 16px;
-   height: 16px;
-}
-#FontAwesomeIcon8 i
-{
-   line-height: 16px;
-   font-size: 16px;
-   width: 13px;
-}
 #wb_FontAwesomeIcon9
 {
    width: 16px;
@@ -2836,41 +2353,6 @@ body
    width: 15px;
 }
 #wb_FontAwesomeIcon9:hover
-{
-   background-color: #46C0CE;
-   background-image: none;
-   border: 2px solid #FFFFFF;
-}
-#wb_FontAwesomeIcon10
-{
-   width: 16px;
-   height: 16px;
-   visibility: hidden;
-   display: none;
-   margin: 0px 10px 0px 0px;
-   padding: 10px 10px 10px 10px;
-   color: #000000;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: #FFFFFF;
-   background-image: none;
-   border-radius: 50%;
-}
-#FontAwesomeIcon10
-{
-   width: 16px;
-   height: 16px;
-}
-#FontAwesomeIcon10 i
-{
-   line-height: 16px;
-   font-size: 16px;
-   width: 12px;
-}
-#wb_FontAwesomeIcon10:hover
 {
    background-color: #46C0CE;
    background-image: none;
@@ -3467,7 +2949,7 @@ body
    margin: 0;
    padding: 0;
 }
-#InlineFrame2
+#wb_InlineFrame2
 {
    left: 0px;
    top: 226px;
@@ -3534,255 +3016,6 @@ body
    font-weight: bold;
    font-size: 32px;
 }
-#wb_Card2
-{
-   width: 210px;
-   height: 332px;
-   visibility: visible;
-   display: inline-block;
-   margin: 0;
-   color: #000000;
-   font-size: 13px;
-   font-family: Georgia;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: url(../images/avatar_blue.png);
-   background-repeat: no-repeat;
-   background-position: center center !important;
-   background-attachment: scroll;
-   background-size: cover;
-   border-radius: 3px;
-}
-#Card2-card-item0
-{
-   box-sizing: border-box;
-   border-radius: 3px 3px 0 0;
-   margin: 50px 30px 20px 30px;
-   padding: 0;
-   color: #000000;
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 13px;
-}
-#wb_Card2:hover #Card2-card-item0
-{
-   -webkit-transform: translate(0px,0%) rotate(0deg) ;
-   -moz-transform: translate(0px,0%) rotate(0deg) ;
-   transform: translate(0px,0%) rotate(0deg) ;
-   opacity: 1.0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
-#Card2-card-item0
-{
-   -webkit-transform: translate(0px,200%) rotate(0deg) ;
-   -moz-transform: translate(0px,200%) rotate(0deg) ;
-   transform: translate(0px,200%) rotate(0deg) ;
-   opacity: 0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
-#Card2-card-item1
-{
-   box-sizing: border-box;
-   border-radius: 0 0 3px 3px;
-   margin: 50px 30px 20px 30px;
-   padding: 0;
-   color: #000000;
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 13px;
-}
-#wb_Card2:hover #Card2-card-item1
-{
-   -webkit-transform: translate(0px,0%) rotate(0deg) ;
-   -moz-transform: translate(0px,0%) rotate(0deg) ;
-   transform: translate(0px,0%) rotate(0deg) ;
-   opacity: 1.0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
-#Card2-card-item1
-{
-   -webkit-transform: translate(0px,200%) rotate(0deg) ;
-   -moz-transform: translate(0px,200%) rotate(0deg) ;
-   transform: translate(0px,200%) rotate(0deg) ;
-   opacity: 0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
-#wb_Card3
-{
-   width: 210px;
-   height: 332px;
-   visibility: visible;
-   display: inline-block;
-   margin: 0;
-   color: #FFFFFF;
-   font-size: 16px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: url(../images/avatar_blue.png);
-   background-repeat: no-repeat;
-   background-position: center center !important;
-   background-attachment: scroll;
-   background-size: cover;
-   border-radius: 3px;
-}
-#Card3-card-item0
-{
-   box-sizing: border-box;
-   border-radius: 3px 3px 0 0;
-   margin: 50px 30px 20px 30px;
-   padding: 0;
-   color: #000000;
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 13px;
-}
-#wb_Card3:hover #Card3-card-item0
-{
-   -webkit-transform: translate(0px,0%) rotate(0deg) ;
-   -moz-transform: translate(0px,0%) rotate(0deg) ;
-   transform: translate(0px,0%) rotate(0deg) ;
-   opacity: 1.0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
-#Card3-card-item0
-{
-   -webkit-transform: translate(0px,200%) rotate(0deg) ;
-   -moz-transform: translate(0px,200%) rotate(0deg) ;
-   transform: translate(0px,200%) rotate(0deg) ;
-   opacity: 0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
-#Card3-card-item1
-{
-   box-sizing: border-box;
-   border-radius: 0 0 3px 3px;
-   margin: 50px 30px 20px 30px;
-   padding: 0;
-   color: #000000;
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 13px;
-}
-#wb_Card3:hover #Card3-card-item1
-{
-   -webkit-transform: translate(0px,0%) rotate(0deg) ;
-   -moz-transform: translate(0px,0%) rotate(0deg) ;
-   transform: translate(0px,0%) rotate(0deg) ;
-   opacity: 1.0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
-#Card3-card-item1
-{
-   -webkit-transform: translate(0px,200%) rotate(0deg) ;
-   -moz-transform: translate(0px,200%) rotate(0deg) ;
-   transform: translate(0px,200%) rotate(0deg) ;
-   opacity: 0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
-#wb_Card4
-{
-   width: 210px;
-   height: 332px;
-   visibility: visible;
-   display: inline-block;
-   margin: 0;
-   color: #FFFFFF;
-   font-size: 16px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: url(../images/avatar_blue.png);
-   background-repeat: no-repeat;
-   background-position: center center !important;
-   background-attachment: scroll;
-   background-size: cover;
-   border-radius: 3px;
-}
-#Card4-card-item0
-{
-   box-sizing: border-box;
-   border-radius: 3px 3px 0 0;
-   margin: 50px 30px 20px 30px;
-   padding: 0;
-   color: #000000;
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 13px;
-}
-#wb_Card4:hover #Card4-card-item0
-{
-   -webkit-transform: translate(0px,0%) rotate(0deg) ;
-   -moz-transform: translate(0px,0%) rotate(0deg) ;
-   transform: translate(0px,0%) rotate(0deg) ;
-   opacity: 1.0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
-#Card4-card-item0
-{
-   -webkit-transform: translate(0px,200%) rotate(0deg) ;
-   -moz-transform: translate(0px,200%) rotate(0deg) ;
-   transform: translate(0px,200%) rotate(0deg) ;
-   opacity: 0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
-#Card4-card-item1
-{
-   box-sizing: border-box;
-   border-radius: 0 0 3px 3px;
-   margin: 50px 30px 20px 30px;
-   padding: 0;
-   color: #000000;
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 13px;
-}
-#wb_Card4:hover #Card4-card-item1
-{
-   -webkit-transform: translate(0px,0%) rotate(0deg) ;
-   -moz-transform: translate(0px,0%) rotate(0deg) ;
-   transform: translate(0px,0%) rotate(0deg) ;
-   opacity: 1.0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
-#Card4-card-item1
-{
-   -webkit-transform: translate(0px,200%) rotate(0deg) ;
-   -moz-transform: translate(0px,200%) rotate(0deg) ;
-   transform: translate(0px,200%) rotate(0deg) ;
-   opacity: 0;
-   -webkit-transition: -webkit-transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   -moz-transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-   transition: transform 400ms linear 0ms, opacity 400ms linear 0ms;
-}
 #wb_IconFont1
 {
    width: 63px;
@@ -3811,10 +3044,6 @@ body
    font-size: 46px;
    width: 45px;
 }
-}
-#portfolio
-{
-   max-width: 1024px;
 }
 #contact
 {
