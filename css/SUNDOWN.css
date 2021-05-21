@@ -1227,10 +1227,6 @@ body
    padding-left: 15px;
    position: relative;
 }
-#LayoutGrid2
-{
-   width: 900px;
-}
 #LayoutGrid2 > .row > .col-1
 {
    float: left;
@@ -1258,10 +1254,6 @@ body
 }
 @media (max-width: 480px)
 {
-#LayoutGrid2
-{
-   width: 100%;
-}
 #LayoutGrid2 > .row > .col-1
 {
    float: none;
@@ -1619,9 +1611,9 @@ body
 {
    position: absolute;
    left: 0px;
-   top: 58px;
+   top: 47px;
    width: 964px;
-   height: 408px;
+   height: 419px;
    z-index: 7;
 }
 #wb_ResponsiveMenu1
@@ -1729,6 +1721,7 @@ body
 #gallery
 {
    position: relative;
+   overflow: auto;
    text-align: center;
    width: 100%;
    height: 478px;
@@ -2957,10 +2950,6 @@ body
    margin-right: -15px;
    margin-left: -15px;
 }
-#LayoutGrid2
-{
-   width: 100%;
-}
 #LayoutGrid2 > .row > .col-1
 {
    padding-right: 15px;
@@ -4008,10 +3997,6 @@ body
    margin-right: -15px;
    margin-left: -15px;
 }
-#LayoutGrid2
-{
-   width: 100%;
-}
 #LayoutGrid2 > .row > .col-1
 {
    padding-right: 15px;
@@ -4825,8 +4810,8 @@ body
    top: 103px;
    width: 121px;
    height: 161px;
-   visibility: visible;
-   display: inline;
+   visibility: hidden;
+   display: none;
    margin: 0;
    padding: 0;
 }
@@ -4858,8 +4843,8 @@ body
    top: 279px;
    width: 212px;
    height: 159px;
-   visibility: visible;
-   display: inline;
+   visibility: hidden;
+   display: none;
    margin: 0;
    padding: 0;
 }
@@ -4887,12 +4872,12 @@ body
 }
 #wb_Image15
 {
-   left: 338px;
+   left: 332px;
    top: 456px;
    width: 121px;
    height: 161px;
-   visibility: visible;
-   display: inline;
+   visibility: hidden;
+   display: none;
    margin: 0;
    padding: 0;
 }
@@ -4901,7 +4886,7 @@ body
    left: 96px;
    top: 44px;
    width: 288px;
-   height: 22px;
+   height: 21px;
    visibility: visible;
    display: inline;
    background-color: transparent;
@@ -5085,10 +5070,6 @@ body
    margin-right: -15px;
    margin-left: -15px;
 }
-#LayoutGrid2
-{
-   width: 100%;
-}
 #LayoutGrid2 > .row > .col-1
 {
    padding-right: 15px;
@@ -5104,8 +5085,8 @@ body
 }
 #wb_ResponsiveMenu1
 {
-   left: 470px;
-   top: 10px;
+   left: 0px;
+   top: 66px;
    width: 450px;
    height: 46px;
    visibility: visible;
