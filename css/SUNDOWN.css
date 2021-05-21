@@ -5046,8 +5046,8 @@ body
 }
 #wb_LayoutGrid2
 {
-   visibility: visible;
-   display: table;
+   visibility: hidden;
+   display: none;
    font-size: 8px;
    font-family: Arial;
    font-weight: normal;
