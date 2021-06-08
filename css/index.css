@@ -459,8 +459,8 @@ body
 #wb_Text7
 {
    position: absolute;
-   left: 9px;
-   top: 9px;
+   left: 10px;
+   top: 541px;
    width: 900px;
    height: 21px;
    text-align: center;
@@ -512,15 +512,6 @@ body
    margin-right: auto;
    text-align: left;
 }
-#wb_Text8
-{
-   position: absolute;
-   left: 9px;
-   top: 90px;
-   width: 900px;
-   height: 459px;
-   z-index: 4;
-}
 #Layer2_Container
 {
    width: 929px;
@@ -528,6 +519,15 @@ body
    margin-left: auto;
    margin-right: auto;
    text-align: left;
+}
+#wb_Text8
+{
+   position: absolute;
+   left: 10px;
+   top: 622px;
+   width: 900px;
+   height: 459px;
+   z-index: 4;
 }
 @media only screen and (min-width: 480px) and (max-width: 929px)
 {
@@ -630,12 +630,106 @@ body
 {
    left: 8px;
    top: 81px;
-   width: 450px;
+   width: 351px;
    height: 46px;
    visibility: visible;
    display: inline;
    margin: 0;
    text-align: left;
+}
+#Layer2
+{
+   left: 1px;
+   top: 532px;
+   height: 1030px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FBFBFB;
+   background-image: none;
+}
+#Layer2
+{
+   width: 99.7899%;
+}
+#Layer2_Container
+{
+   width: 475px;
+}
+#Layer3
+{
+   left: 1px;
+   top: 2001px;
+   height: 99px;
+   visibility: visible;
+   display: inline;
+   font-size: 13px;
+   font-family: Georgia;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #000000;
+   background-image: none;
+}
+#Layer3
+{
+   width: 99.7899%;
+}
+#Layer3_Container
+{
+   width: 475px;
+}
+#wb_Text7
+{
+   left: 0px;
+   top: 541px;
+   width: 476px;
+   height: 21px;
+   visibility: visible;
+   display: inline;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_Text7
+{
+   margin: 0;
+   padding: 40px 0px 20px 0px;
+}
+#wb_Text8
+{
+   left: 2px;
+   top: 676px;
+   width: 466px;
+   height: 809px;
+   visibility: visible;
+   display: inline;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_Text8
+{
+   margin: 0;
+   padding: 10px 0px 40px 0px;
+}
+#Layer1
+{
+   left: 2px;
+   top: 1562px;
+   width: 474px;
+   height: 439px;
+   visibility: visible;
+   display: inline;
+   font-size: 13px;
+   font-family: Georgia;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #D8D8D8;
+   background-image: none;
 }
 }
 @media only screen and (min-width: 480px) and (max-width: 479px)
@@ -739,15 +833,116 @@ body
 {
    left: 8px;
    top: 81px;
-   width: 450px;
+   width: 351px;
    height: 46px;
    visibility: visible;
    display: inline;
    margin: 0;
    text-align: left;
 }
+#Layer2
+{
+   left: 1px;
+   top: 532px;
+   height: 1030px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FBFBFB;
+   background-image: none;
 }
-@media only screen and (max-width: 479px) and (orientation: portrait)
+#Layer2
+{
+   width: 99.7899%;
+}
+#Layer2_Container
+{
+   width: 475px;
+}
+#Layer3
+{
+   left: 1px;
+   top: 2001px;
+   height: 99px;
+   visibility: visible;
+   display: inline;
+   font-size: 13px;
+   font-family: Georgia;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #000000;
+   background-image: none;
+}
+#Layer3
+{
+   width: 99.7899%;
+}
+#Layer3_Container
+{
+   width: 475px;
+}
+#wb_Text7
+{
+   left: 0px;
+   top: 541px;
+   width: 476px;
+   height: 21px;
+   visibility: visible;
+   display: inline;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_Text7
+{
+   margin: 0;
+   padding: 40px 0px 20px 0px;
+}
+#wb_Text8
+{
+   left: 2px;
+   top: 676px;
+   width: 466px;
+   height: 809px;
+   visibility: visible;
+   display: inline;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_Text8
+{
+   margin: 0;
+   padding: 10px 0px 40px 0px;
+}
+#Layer1
+{
+   left: 2px;
+   top: 1562px;
+   width: 474px;
+   height: 439px;
+   visibility: visible;
+   display: inline;
+   font-size: 13px;
+   font-family: Georgia;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #D8D8D8;
+   background-image: none;
+}
+}
+@media only screen and (min-width: 360px) and (max-width: 479px)
+{
+div#container
+{
+   width: 0px;
+}
+}
+@media only screen and (max-width: 359px) and (orientation: portrait)
 {
 div#container
 {
